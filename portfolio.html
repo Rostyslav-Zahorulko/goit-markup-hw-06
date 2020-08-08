@@ -447,15 +447,101 @@
           </ul>
         </div>
         <!-- Блок-обгортка для подальшої стилізації -->
-        <div>
+        <div class="subscribe-form-block">
           <!-- Заклик до дії -->
           <b class="call-to-action">подпишитесь на рассылку</b>
-          <button class="subscribe-button button" type="button">
-            Подписаться
-            <svg class="plane-icon" width="24" height="24">
-              <use href="./images/sprite.svg#plane-icon"></use>
-            </svg>
-          </button>
+          <form class="subscribe-form" autocomplete="off">
+            <input
+              class="subscribe-form-input"
+              type="email"
+              name="mail"
+              placeholder="E-mail"
+            />
+            <button class="subscribe-submit-button button" type="button">
+              Подписаться
+              <svg class="subscribe-icon" width="24" height="24">
+                <use href="./images/sprite.svg#plane-icon"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <b class="modal-call">Оставьте свои данные, мы вам перезвоним</b>
+            <form class="feedback-form" autocomplete="off">
+              <div class="form-field">
+                <input
+                  class="form-field-input"
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder=" "
+                />
+                <label class="form-field-label" for="name">Имя</label>
+                <div class="form-field-container">
+                  <svg class="form-field-icon" width="12" height="12">
+                    <use href="./images/sprite.svg#icon-name"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="form-field">
+                <input
+                  class="form-field-input"
+                  type="tel"
+                  name="tel"
+                  id="tel"
+                  placeholder=" "
+                />
+                <label class="form-field-label" for="tel">Телефон</label>
+                <div class="form-field-container">
+                  <svg class="form-field-icon" width="13" height="13">
+                    <use href="./images/sprite.svg#icon-telephone"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="form-field">
+                <input
+                  class="form-field-input"
+                  type="email"
+                  name="mail"
+                  id="mail"
+                  placeholder=" "
+                />
+                <label class="form-field-label" for="mail">Почта</label>
+                <div class="form-field-container">
+                  <svg class="form-field-icon" width="15" height="12">
+                    <use href="./images/sprite.svg#icon-mail"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="form-field">
+                <textarea
+                  class="form-field-textarea"
+                  name="comment"
+                  id="comment"
+                  placeholder=" "
+                ></textarea>
+                <label class="form-field-label" for="comment"
+                  >Комментарий</label
+                >
+              </div>
+              <div class="form-field">
+                <input type="checkbox" name="check" id="check" />
+                <label for="check"
+                  >Соглашаюсь с рассылкой и принимаю
+                  <a class="agreement" href="">Условия договора</a></label
+                >
+              </div>
+              <button class="modal-submit-button button" type="submit">
+                Отправить
+              </button>
+            </form>
+            <button class="modal-close-button" type="button" data-modal-close>
+              <svg class="close-icon">
+                <use href="./images/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </footer>

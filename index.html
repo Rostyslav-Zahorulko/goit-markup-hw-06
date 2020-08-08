@@ -633,17 +633,19 @@
           </ul>
         </div>
         <!-- Блок-обгортка для подальшої стилізації -->
-        <div class="form-block">
+        <div class="subscribe-form-block">
           <!-- Заклик до дії -->
           <b class="call-to-action">подпишитесь на рассылку</b>
-          <form action="">
-            <label class="form-label">
-              E-mail
-              <input class="form-input" type="text" name="message" />
-            </label>
-            <button class="subscribe-button button" type="button">
+          <form class="subscribe-form" autocomplete="off">
+            <input
+              class="subscribe-form-input"
+              type="email"
+              name="mail"
+              placeholder="E-mail"
+            />
+            <button class="subscribe-submit-button button" type="button">
               Подписаться
-              <svg class="plane-icon" width="24" height="24">
+              <svg class="subscribe-icon" width="24" height="24">
                 <use href="./images/sprite.svg#plane-icon"></use>
               </svg>
             </button>
