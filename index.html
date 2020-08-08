@@ -87,7 +87,11 @@
         <h1 class="hero-section-title">
           Эффективные решения<br />для вашего бизнеса
         </h1>
-        <button class="modal-window-button button" type="button">
+        <button
+          class="modal-window-button button"
+          type="button"
+          data-modal-open
+        >
           Заказать услугу
         </button>
       </section>
@@ -649,10 +653,21 @@
             </button>
           </form>
         </div>
-        <div class="backdrop">
-          <div class="modal"></div>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dignissimos minus similique illum, quam quod eveniet tenetur
+              suscipit a alias, eaque repudiandae numquam non reprehenderit
+              inventore quia soluta nemo fuga. Similique consequuntur nostrum
+              soluta ipsum. Quia quaerat nam sapiente sunt earum?
+            </p>
+            <button type="button" data-modal-close></button>
+          </div>
         </div>
       </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
