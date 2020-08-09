@@ -233,7 +233,7 @@ body {
 }
 
 .modal-open-button,
-.modal-submit-button {
+.feedback-form-submit-button {
   display: block;
   min-width: 200px;
   padding-top: 10px;
@@ -599,7 +599,7 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.subscribe-submit-button {
+.subscribe-form-submit-button {
   display: inline-flex;
   align-items: center;
   min-width: 200px;
