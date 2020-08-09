@@ -450,14 +450,14 @@
         <div class="subscribe-form-block">
           <!-- Заклик до дії -->
           <b class="call-to-action">подпишитесь на рассылку</b>
-          <form class="subscribe-form" autocomplete="off">
+          <form class="subscribe-form">
             <input
               class="subscribe-form-input"
               type="email"
               name="mail"
               placeholder="E-mail"
             />
-            <button class="subscribe-submit-button button" type="button">
+            <button class="subscribe-form-submit-button button" type="submit">
               Подписаться
               <svg class="subscribe-icon" width="24" height="24">
                 <use href="./images/sprite.svg#plane-icon"></use>
@@ -468,7 +468,7 @@
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <b class="modal-call">Оставьте свои данные, мы вам перезвоним</b>
-            <form class="feedback-form" autocomplete="off">
+            <form class="feedback-form form">
               <div class="form-field">
                 <input
                   class="form-field-input"
@@ -476,13 +476,12 @@
                   name="name"
                   id="name"
                   placeholder=" "
+                  required
                 />
                 <label class="form-field-label" for="name">Имя</label>
-                <div class="form-field-container">
-                  <svg class="form-field-icon" width="12" height="12">
-                    <use href="./images/sprite.svg#icon-name"></use>
-                  </svg>
-                </div>
+                <svg class="form-field-icon">
+                  <use href="./images/sprite.svg#icon-name"></use>
+                </svg>
               </div>
               <div class="form-field">
                 <input
@@ -491,13 +490,12 @@
                   name="tel"
                   id="tel"
                   placeholder=" "
+                  required
                 />
                 <label class="form-field-label" for="tel">Телефон</label>
-                <div class="form-field-container">
-                  <svg class="form-field-icon" width="13" height="13">
-                    <use href="./images/sprite.svg#icon-telephone"></use>
-                  </svg>
-                </div>
+                <svg class="form-field-icon">
+                  <use href="./images/sprite.svg#icon-phone"></use>
+                </svg>
               </div>
               <div class="form-field">
                 <input
@@ -506,15 +504,14 @@
                   name="mail"
                   id="mail"
                   placeholder=" "
+                  required
                 />
                 <label class="form-field-label" for="mail">Почта</label>
-                <div class="form-field-container">
-                  <svg class="form-field-icon" width="15" height="12">
-                    <use href="./images/sprite.svg#icon-mail"></use>
-                  </svg>
-                </div>
+                <svg class="form-field-icon">
+                  <use href="./images/sprite.svg#icon-email"></use>
+                </svg>
               </div>
-              <div class="form-field">
+              <div class="form-field textarea">
                 <textarea
                   class="form-field-textarea"
                   name="comment"
@@ -525,14 +522,22 @@
                   >Комментарий</label
                 >
               </div>
-              <div class="form-field">
-                <input type="checkbox" name="check" id="check" />
-                <label for="check"
-                  >Соглашаюсь с рассылкой и принимаю
-                  <a class="agreement" href="">Условия договора</a></label
-                >
+              <div class="form-field checkbox">
+                <input
+                  class="checkbox-input"
+                  type="checkbox"
+                  name="check"
+                  value="Подтверждаю"
+                  id="check"
+                  required
+                />
+                <label class="checkbox-label" for="check">
+                  <span class="checkbox-label-text"
+                    >Соглашаюсь с рассылкой и принимаю </span
+                  ><a class="checkbox-label-link" href="">Условия договора</a>
+                </label>
               </div>
-              <button class="modal-submit-button button" type="submit">
+              <button class="feedback-form-submit-button button" type="submit">
                 Отправить
               </button>
             </form>

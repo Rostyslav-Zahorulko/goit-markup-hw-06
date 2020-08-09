@@ -636,7 +636,7 @@
         <div class="subscribe-form-block">
           <!-- Заклик до дії -->
           <b class="call-to-action">подпишитесь на рассылку</b>
-          <form class="subscribe-form" autocomplete="off">
+          <form class="subscribe-form">
             <input
               class="subscribe-form-input"
               type="email"
@@ -654,7 +654,7 @@
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <b class="modal-call">Оставьте свои данные, мы вам перезвоним</b>
-            <form class="feedback-form form" autocomplete="off">
+            <form class="feedback-form form">
               <div class="form-field">
                 <input
                   class="form-field-input"
@@ -662,6 +662,7 @@
                   name="name"
                   id="name"
                   placeholder=" "
+                  required
                 />
                 <label class="form-field-label" for="name">Имя</label>
                 <svg class="form-field-icon">
@@ -675,6 +676,7 @@
                   name="tel"
                   id="tel"
                   placeholder=" "
+                  required
                 />
                 <label class="form-field-label" for="tel">Телефон</label>
                 <svg class="form-field-icon">
@@ -688,6 +690,7 @@
                   name="mail"
                   id="mail"
                   placeholder=" "
+                  required
                 />
                 <label class="form-field-label" for="mail">Почта</label>
                 <svg class="form-field-icon">
@@ -710,11 +713,14 @@
                   class="checkbox-input"
                   type="checkbox"
                   name="check"
+                  value="Подтверждаю"
                   id="check"
+                  required
                 />
-                <label class="checkbox-label" for="check"
-                  >Соглашаюсь с рассылкой и принимаю
-                  <a class="agreement-link" href="">Условия договора</a>
+                <label class="checkbox-label" for="check">
+                  <span class="checkbox-label-text"
+                    >Соглашаюсь с рассылкой и принимаю </span
+                  ><a class="checkbox-label-link" href="">Условия договора</a>
                 </label>
               </div>
               <button class="feedback-form-submit-button button" type="submit">
@@ -732,6 +738,6 @@
     </footer>
 
     <script src="./js/modal.js"></script>
-    <script src="./js/subscribe-form.js"></script>
+    <!-- <script src="./js/subscribe-form.js"></script> -->
   </body>
 </html>
