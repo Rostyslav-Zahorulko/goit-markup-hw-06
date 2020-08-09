@@ -694,7 +694,7 @@
                   <use href="./images/sprite.svg#icon-email"></use>
                 </svg>
               </div>
-              <div class="form-field">
+              <div class="form-field textarea">
                 <textarea
                   class="form-field-textarea"
                   name="comment"
@@ -705,12 +705,17 @@
                   >Комментарий</label
                 >
               </div>
-              <div class="form-field">
-                <input type="checkbox" name="check" id="check" />
-                <label for="check"
+              <div class="form-field checkbox">
+                <input
+                  class="checkbox-input"
+                  type="checkbox"
+                  name="check"
+                  id="check"
+                />
+                <label class="checkbox-label" for="check"
                   >Соглашаюсь с рассылкой и принимаю
-                  <a class="agreement" href="">Условия договора</a></label
-                >
+                  <a class="agreement-link" href="">Условия договора</a>
+                </label>
               </div>
               <button class="modal-submit-button button" type="submit">
                 Отправить
