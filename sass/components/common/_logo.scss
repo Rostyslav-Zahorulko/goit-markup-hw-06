@@ -1,0 +1,19 @@
+.logo {
+  font-family: $secondary-font-family;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: $accent-color;
+}
+
+.header .logo {
+  margin-right: 85px;
+}
+
+.logo-second-part {
+  color: #000000;
+}
+
+.footer .logo-second-part {
+  color: $tertiary-text-color;
+}

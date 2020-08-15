@@ -1,0 +1,22 @@
+.contacts-block {
+  margin-right: 69px;
+}
+
+.address {
+  margin-top: 20px;
+}
+
+.contact-data-list-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.contact-data-list-item-link {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.7143;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-data-list-item-link.physical-address {
+  color: $tertiary-text-color;
+}
